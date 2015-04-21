@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Meal Service</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+</head>
+<script language="javascript">
+function check()
+{
+	if(document.form1.username.value=="" || document.form1.pwd.value=="" || document.form1.yzm.value=="")
+	{
+		alert("Please Insert Whole Info");
+		return false;
+	}
+}
+</script>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="1000" height="564" border="0" align="center" cellpadding="0" cellspacing="0" background="images/login.jpg" id="__01">
+  <tr>
+    <td height="193" colspan="3"><div align="center" style="color: #CCFFCC;font-size: 26pt;font-weight: bold;">Meal Service</div></td>
+  </tr>
+  <tr>
+    <td width="352" rowspan="2" valign="top">&nbsp;</td>
+    <td width="211" height="152"><table width="195" border="0" align="right" cellpadding="0" cellspacing="0">
+      <form name="form1" method="post" action="login.php">
+        <tr>
+          <td width="47" height="30">User:</td>
+          <td height="30" colspan="2"><input name="username" type="text" id="username" style="width:100px; height:16px; border:solid 1px #000000; color:#666666"></td>
+        </tr>
+        <tr>
+          <td height="30">Password:</td>
+          <td height="30" colspan="2"><input name="pwd" type="password" id="pwd" style="width:100px; height:16px; border:solid 1px #000000; color:#666666"></td>
+        </tr>
+        
+        <tr style="display:none">
+          <td height="30">Authority:</td>
+          <td height="30" colspan="2"><select name="cx" id="cx">
+            <option value="Admin">Admin</option>
+          </select>
+                <input name="login" type="hidden" id="login" value="1"></td>
+        </tr>
+		 <tr>
+          <td height="30">Clarify:</td>
+          <td width="52" height="30"><input name="yzm" type="text" id="yzm" style=" height:16px; border:solid 1px #000000; color:#666666; width:50px"></td>
+          <td width="96"><img alt="Refresh" onClick="this.src='code.php?time='+new Date().getTime();" src="code.php?time='+new Date().getTime();" style="cursor:hand"></td>
+		 </tr>
+        <tr>
+          <td height="30" colspan="3"><input type="submit" name="Submit" value="Login" onClick="return check();" style="background:url(images/button.gif) no-repeat;color:#ffffff;width:80px;height: 24px; border:0px;line-height:10px; font-size:12px;margin-right: 5px; cursor:pointer">
+                <input type="reset" name="Submit2" value="Reset" style="background:url(images/button.gif) no-repeat;color:#ffffff;width:80px;height: 24px; border:0px;line-height:10px; font-size:12px;margin-right: 5px; cursor:pointer"></td>
+        </tr>
+      </form>
+    </table></td>
+    <td width="437" rowspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
